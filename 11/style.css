@@ -1,0 +1,224 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+/*	*/
+}
+body {
+	width: 420px;
+	height: 420px;
+	background-color: white;
+	border: 2px solid black;
+	margin: 40px auto;
+	position: relative;
+	box-sizing: border-box;
+
+}
+
+.board {
+	font-size: 0;
+	width: 400px;
+	height: 400px;
+	background-color: #6699CC;
+	border: 2px solid black;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+}
+
+.square {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-color: black;
+}
+
+.square:nth-of-type(-n+8):nth-of-type(odd) {
+	background-color: #fff;
+}
+.square:nth-child(n+9):nth-child(-n+16):nth-of-type(even) {
+	background-color: #fff;
+}
+.square:nth-child(n+17):nth-child(-n+24):nth-of-type(odd) {
+	background-color: #fff;
+}
+.square:nth-child(n+25):nth-child(-n+32):nth-of-type(even) {
+	background-color: #fff;
+}
+.square:nth-child(n+33):nth-child(-n+40):nth-of-type(odd) {
+	background-color: #fff;
+}
+.square:nth-child(n+41):nth-child(-n+48):nth-of-type(even) {
+	background-color: #fff;
+}
+.square:nth-child(n+49):nth-child(-n+56):nth-of-type(odd) {
+	background-color: #fff;
+}
+.square:nth-child(n+57):nth-child(-n+64):nth-of-type(even) {
+	background-color: #fff;
+}
+
+
+.chip1 {
+	width: 30px;
+	height: 30px;
+	background-color: blue;
+	border-radius: 50%;	
+	box-shadow: 0 0 10px rgba(3,3,0,0.2);
+	z-index: 100;
+}
+
+.chip1:nth-child(2) {
+	position: absolute;
+	top: 17px;
+	left: 67px;
+
+}
+.chip1:nth-child(3) {
+	position: absolute;
+	top: 17px;
+	left: 167px;
+}
+
+.chip1:nth-child(4) {
+	position: absolute;
+	top: 17px;
+	left: 267px;
+}
+.chip1:nth-child(5) {
+	position: absolute;
+	top: 17px;
+	left: 367px;
+}
+.chip1:nth-child(6) {
+	position: absolute;
+	top: 67px;
+	left: 17px;
+}
+.chip1:nth-child(7) {
+	position: absolute;
+	top: 67px;
+	left: 117px;
+}
+.chip1:nth-child(8) {
+	position: absolute;
+	top: 67px;
+	left: 217px;
+}
+.chip1:nth-child(9) {
+	position: absolute;
+	top: 67px;
+	left: 317px;
+}
+
+.chip1:nth-child(10) {
+	position: absolute;
+	top: 117px;
+	left: 67px;
+
+}
+.chip1:nth-child(11) {
+	position: absolute;
+	top: 117px;
+	left: 167px;
+}
+
+.chip1:nth-child(12) {
+	position: absolute;
+	top: 117px;
+	left: 267px;
+}
+.chip1:nth-child(13) {
+	position: absolute;
+	top: 117px;
+	left: 367px;
+}
+
+
+.chip2 {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	border-radius: 50%;	
+	box-shadow: 0 0 10px rgba(3,3,0,0.2);
+	z-index: 101;
+}
+
+.chip2:nth-child(14) {
+	position: absolute;
+	bottom: 117px;
+	left: 17px;
+
+}
+.chip2:nth-child(15) {
+	position: absolute;
+	bottom: 117px;
+	left: 117px;
+}
+
+.chip2:nth-child(16) {
+	position: absolute;
+	bottom: 117px;
+	left: 217px;
+}
+.chip2:nth-child(17) {
+	position: absolute;
+	bottom: 117px;
+	left: 317px;
+}
+.chip2:nth-child(18) {
+	position: absolute;
+	bottom: 67px;
+	left: 67px;
+}
+.chip2:nth-child(19) {
+	position: absolute;
+	bottom: 67px;
+	left: 167px;
+}
+.chip2:nth-child(20) {
+	position: absolute;
+	bottom: 67px;
+	left: 267px;
+}
+.chip2:nth-child(21) {
+	position: absolute;
+	bottom: 67px;
+	left: 367px;
+}
+
+.chip2:nth-child(22) {
+	position: absolute;
+	bottom: 17px;
+	left: 17px;
+
+}
+.chip2:nth-child(23) {
+	position: absolute;
+	bottom: 17px;
+	left: 117px;
+}
+
+.chip2:nth-child(24) {
+	position: absolute;
+	bottom: 17px;
+	left: 217px;
+}
+.chip2:nth-child(25) {
+	position: absolute;
+	bottom: 17px;
+	left: 317px;
+}
+
+.chip1:hover {
+	opacity: 0.5;
+}
+.chip2:hover {
+	opacity: 0.5;
+}
+
